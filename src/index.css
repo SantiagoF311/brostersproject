@@ -1,0 +1,52 @@
+/* Normalización básica de estilos */
+
+/* Establece box-sizing para todos los elementos */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corrige la altura de las imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Restablece los estilos de los encabezados */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* Ajusta los enlaces para heredar el color y eliminar subrayado */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Asegura que los botones no tengan estilos extra */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+/* Evita la herencia de estilos en formularios */
+input, textarea, select, button {
+  font: inherit;
+}
+
+/* Define un estilo base para el cuerpo */
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Evita saltos inesperados en listas */
+ul, ol {
+  list-style: none;
+}
