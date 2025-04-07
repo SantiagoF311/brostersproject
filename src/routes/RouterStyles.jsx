@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 export const LayoutContainer = styled.div`
   display: flex;
+  gap: 3rem;
   flex-grow: 1; 
   overflow: hidden; 
   padding-right: 2rem;
+  padding-left: 2rem;
   padding-bottom: 2rem;
 `;
 

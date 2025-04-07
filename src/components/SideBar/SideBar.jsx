@@ -1,15 +1,25 @@
-import { SidebarContainer, StyledLink, LinkContainer } from "./SideBarStyles";
-import { LayoutDashboard } from "lucide-react"; 
+import { SidebarContainer, LinkContainer, IconWrapper, Underline } from "./SideBarStyles";
+import { LayoutDashboard, Album } from "lucide-react";
+
 
 const Sidebar = () => {
   return (
     <SidebarContainer>
-      <LinkContainer>
-        <LayoutDashboard size={20} color="#000000" />     
-        <StyledLink to="/inventario">Inventario</StyledLink>
+      <LinkContainer to="/dashboard">
+        <IconWrapper>
+          <LayoutDashboard />
+        </IconWrapper>
+        Dashboard
+        <Underline />
       </LinkContainer>
       
-      <StyledLink to="/about">About</StyledLink>
+      <LinkContainer to="/about">
+        <IconWrapper>
+          <Album />
+        </IconWrapper>
+          About
+        <Underline />
+      </LinkContainer>
     </SidebarContainer>
   );
 };

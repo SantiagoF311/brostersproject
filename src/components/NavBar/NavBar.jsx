@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Search } from "lucide-react"; 
+import { Drumstick, Search, ChevronDown } from "lucide-react"; 
 
 import { 
   Nav, 
@@ -8,7 +8,13 @@ import {
   NavLinkImage, 
   SearchContainer, 
   SearchInput, 
-  SearchIconWrapper
+  SearchIconWrapper,
+  PerfilContainer,
+  PerfilIconWrapper,
+  SearcherPerfilContainer,
+  PerfilUsernameText,
+  PerfilRoleText,
+  ArrowIconWrapper
 } from "./NavBarStyles";
 import homeIcon from "../../assets/broasters.webp"; // Ruta correcta de la imagen
 
@@ -24,12 +30,26 @@ const Navbar = () => {
         </NavItem>
 
         {/* Buscador con icono */}
-        <SearchContainer>
-          <SearchInput type="text" placeholder="Buscar..." />
-          <SearchIconWrapper>
-            <Search size={20} color="#ffffff" />
-          </SearchIconWrapper>
-        </SearchContainer>
+        
+        <SearcherPerfilContainer>
+          <SearchContainer>
+            <SearchInput type="text" placeholder="Buscar..." />
+            <SearchIconWrapper>
+              <Search/>
+            </SearchIconWrapper>
+          </SearchContainer>
+
+          <PerfilContainer>
+            <PerfilIconWrapper>
+              <Drumstick/>
+            </PerfilIconWrapper> 
+
+            <ArrowIconWrapper>
+              <ChevronDown/>
+            </ArrowIconWrapper>                       
+          </PerfilContainer>
+        </SearcherPerfilContainer>
+
       </NavList>
     </Nav>
   );
