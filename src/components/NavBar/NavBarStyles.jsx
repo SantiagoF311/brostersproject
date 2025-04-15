@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   padding: 2rem;
+  padding-bottom: 1em;
 `;
 
 export const NavList = styled.ul`
@@ -33,7 +34,8 @@ export const SearchContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f3f3f3;
+  box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: ${({ theme }) => theme.colors.gray};
   width: 95%;
   height: 52px;
   border: 2.5px solid transparent;

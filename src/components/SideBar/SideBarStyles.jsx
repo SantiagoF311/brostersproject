@@ -6,8 +6,12 @@ export const SidebarContainer = styled.nav`
   flex-direction: column;
   padding-top: 40px;
   gap: 1.5em;
-  width: 160px;
+  min-width: 10em;
   background-color: transparent;
+
+  @media (max-width: 1140px) {
+    display: none;
+  }
 `;
 
 export const LinksContainer = styled.div`

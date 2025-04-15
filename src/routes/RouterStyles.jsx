@@ -8,12 +8,16 @@ export const LayoutContainer = styled.div`
   padding-right: 2rem;
   padding-left: 2rem;
   padding-bottom: 2rem;
+  
 `;
 
 
 export const MainContent = styled.main`
-  background-color: #f1f1f1;
-  border-radius: 20px;
+  overflow-x: auto;
+  width: 100%;
+  background-color: ${({ theme }) => theme.colors.gray};
+  padding: 2em;
+  border-radius: 40px;
   flex-grow: 1;
-  padding: 2rem;
+  max-height: 100vh;
 `;
